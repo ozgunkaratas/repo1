@@ -1,2 +1,2 @@
 # repo1
-Tutorial Steps
+Repo holds tutorial adjacent commits, merge requests, build recipes for conan and cmake and basic tooling.
