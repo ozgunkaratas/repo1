@@ -12,6 +12,7 @@ add_executable(repo1_app app/main.cpp)
 target_link_libraries(repo1_app PRIVATE temperature)
 target_compile_options(repo1_app PRIVATE $<$<CXX_COMPILER_ID:MSVC>:/W4 /permissive->)
 
+option(BUILD_TESTING "Build the unit tests" OFF)
 include(CTest)  # adds BUILD_TESTING (ON by default) and enable_testing()
 if(BUILD_TESTING)
   find_package(GTest REQUIRED)  # provided by Conan's CMakeDeps
